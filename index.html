@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Family - Halaman 1</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ffecd2, #fcb69f);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      padding: 30px;
+    }
+
+    .judul {
+      font-size: 2.5em;
+      color: #ff4d6d;
+      text-shadow: 2px 2px 6px rgba(255, 0, 0, 0.3);
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 5px #ff7a7a, 0 0 10px #ff4d6d;
+      }
+      to {
+        text-shadow: 0 0 10px #ff7a7a, 0 0 20px #ff4d6d;
+      }
+    }
+
+    .tokoh {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #333;
+    }
+
+    .lanjut {
+      margin-top: 30px;
+      font-size: 1em;
+      padding: 10px 20px;
+      background-color: #ff758f;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .lanjut:hover {
+      background-color: #ff4d6d;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="judul">🌟 Our Happy Family 🌟</h1>
+    <p class="tokoh">Sambutan hangat dari kami semua! 😄</p>
+    <p class="tokoh">Tokoh yang terlibat dalam cerita ini:</p>
+    <p class="tokoh">
+      Ahmad, Zila, Cumi, Rey, Ichirou, Japi, Yanz, Fall, Farhan, Bilal, Pedo, Hidzib, dan Nadia.
+    </p>
+    <button class="lanjut" onclick="location.href='halaman2.html'">Lanjut ke Cerita</button>
+  </div>
+</body>
+</html>
