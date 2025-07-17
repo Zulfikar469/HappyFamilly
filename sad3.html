@@ -1,4 +1,4 @@
-content://com.android.externalstorage.documents/tree/primary%3AWebHappyFamilly::primary:WebHappyFamilly/sad3.html<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
@@ -7,12 +7,12 @@ content://com.android.externalstorage.documents/tree/primary%3AWebHappyFamilly::
   <style>
     body {
       margin: 0;
-      padding: 40px;
+      padding: 20px;
       background: linear-gradient(to bottom, #1a1a1a, #000000);
       color: #cccccc;
       font-family: 'Segoe UI', sans-serif;
       line-height: 1.8;
-      background-image: url('https://i.imgur.com/OjF0B0A.jpg'); /* Tambahkan gambar latar kesuraman jika ingin */
+      background-image: url('https://i.imgur.com/OjF0B0A.jpg');
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
@@ -21,36 +21,52 @@ content://com.android.externalstorage.documents/tree/primary%3AWebHappyFamilly::
     .container {
       max-width: 800px;
       margin: auto;
-      background-color: rgba(0,0,0,0.7);
-      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 25px;
       border-radius: 15px;
       box-shadow: 0 0 20px #000;
     }
     h1 {
       text-align: center;
       color: #ff4c4c;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
+      font-size: 1.8em;
     }
     p {
       text-align: justify;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
+      font-size: 1em;
     }
     .btns {
-      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
       margin-top: 30px;
     }
     .btns a {
-      display: inline-block;
-      padding: 12px 24px;
-      margin: 0 10px;
+      flex: 1;
+      text-align: center;
+      padding: 12px 20px;
       background-color: #660000;
       color: #fff;
       text-decoration: none;
       border-radius: 6px;
       transition: background 0.3s;
+      font-weight: bold;
+      min-width: 100px;
     }
     .btns a:hover {
       background-color: #990000;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5em;
+      }
+      p {
+        font-size: 0.95em;
+      }
     }
   </style>
 </head>

@@ -1,31 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ending Sad - Halaman 4</title>
   <style>
     body {
       margin: 0;
-      padding: 20px;
+      padding: 0;
       font-family: Arial, sans-serif;
       background: linear-gradient(to bottom, #2c2c2c, #000000);
       color: #e0e0e0;
       line-height: 1.8;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
+
     .container {
-      max-width: 800px;
-      margin: auto;
+      max-width: 900px;
+      width: 90%;
+      padding: 30px;
+      box-sizing: border-box;
     }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1em;
+      text-align: justify;
+    }
+
+    .button-group {
+      margin-top: 40px;
+      text-align: center;
+    }
+
     .btn {
       display: inline-block;
-      margin: 30px 10px 0 0;
-      padding: 10px 20px;
-      background-color: #333;
+      margin: 10px;
+      padding: 12px 24px;
+      font-size: 1em;
+      background-color: #444;
       color: white;
       text-decoration: none;
       border-radius: 8px;
+      transition: background-color 0.3s ease;
     }
+
     .btn:hover {
-      background-color: #555;
+      background-color: #666;
+    }
+
+    @media (max-width: 600px) {
+      .btn {
+        width: 100%;
+        box-sizing: border-box;
+      }
     }
   </style>
 </head>
@@ -38,8 +74,10 @@
     <p>
       Suatu hari, Zila menulis di grup, “Masih ingat kita dulu?” tapi tak ada yang membalas, bahkan setelah berjam-jam. Ia akhirnya menghapus pesan itu. Cumi yang dulu paling ramai kini menghapus akun media sosialnya, menghilang begitu saja. Ichirou kembali ke kota asalnya, tanpa sempat berpamitan. Satu per satu mereka hilang dari radar, dan kenangan pun mulai terkikis oleh waktu.
     </p>
-    <a href="sad3.html" class="btn">Kembali</a>
-    <a href="sad5.html" class="btn">Lanjut</a>
+    <div class="button-group">
+      <a href="sad3.html" class="btn">Kembali</a>
+      <a href="sad5.html" class="btn">Lanjut</a>
+    </div>
   </div>
 </body>
 </html>
